@@ -17,5 +17,5 @@ String command(){
 }
 
 void main(){
-	
+	printf("¡Bienvenido al simulador de Shell de Linux de Sistemas Operativos")
 }

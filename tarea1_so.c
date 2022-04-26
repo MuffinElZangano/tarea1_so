@@ -78,7 +78,9 @@ int main(){
 
 
 void printMessage(char suffix[]){
+	printf("\033[0;32m"); //Set color to green
 	printf("%s\n",suffix);
+	printf("\033[0;37m"); //Set color to white
 }
 
 void ls(){
@@ -111,9 +113,10 @@ bool touch(char suffix[]){
 }
 void help(){
     printf("\nWelcome to Marcos and Ben's simulated Linux Shell, these are the available commands:\n");
-    printf("	1. print <message> //Prints out a message on the screen, NOTE: Should be between double quotes.\n");
-    printf("	2. touch <file_name.format> //Creates a file with the designated file name and format. \n");
-    printf("	3. ls						//Shows the files available.\n\n");
+    printf("	1. print <message> //Prints out a message on the screen. printf \"text\"\n");
+    printf("	2. touch <file_name.format> //Creates a file with the designated file name and format. touch \"file.format\"\n");
+    printf("	3. ls						//Shows the files available.\n");
+    printf("NOTE: Every oommand that uses suffix should be double quoted.\n");
 }
 
 
